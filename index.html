@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0055A4">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Ouça e Repita">
+<title>Ouça e Repita — Francês na Prática</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="faixa"></div>
+<header class="topo">
+  <button id="voltar" class="icone" aria-label="Voltar" hidden>←</button>
+  <div class="titulo">
+    <h1 id="titulo">Ouça e Repita</h1>
+    <p id="sub">Francês na Prática</p>
+  </div>
+  <a class="pdf" href="material.pdf" target="_blank" rel="noopener">📘 PDF</a>
+</header>
+
+<main id="app" aria-live="polite"></main>
+
+<div id="player" class="player" hidden>
+  <div class="p-info">
+    <strong id="p-it">—</strong>
+    <span id="p-pt"></span>
+  </div>
+  <div class="p-ctrl">
+    <button id="p-prev" class="icone" aria-label="Anterior">⏮</button>
+    <button id="p-play" class="icone grande" aria-label="Tocar ou pausar">▶</button>
+    <button id="p-next" class="icone" aria-label="Próxima">⏭</button>
+    <button id="p-vel" class="vel" aria-label="Velocidade">Normal</button>
+  </div>
+  <div class="p-barra"><i id="p-prog"></i></div>
+</div>
+
+<div id="aviso" class="aviso" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
